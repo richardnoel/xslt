@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<div class="tabbable tabs-left">
+   <ul class="nav nav-tabs">
+      <li class=""><a href="#tab-1" data-toggle="tab">Ejemplo 1</a></li>
+      <li class=""><a href="#tab-2" data-toggle="tab">Ejemplo 2</a></li>
+      <li class=""><a href="#tab-3" data-toggle="tab">Ejemplo 3</a></li>
+   </ul>
+   <div class="tab-content">
+      <div class="tab-pane" id="tab-1">
+         
+         <p>Esta directiva tranforma la apariencia de un componente HTML Basico a una estructura HTML del Framework implementado (Version 1.0 BOOTSTRAP 3.X)</p>
+         <textarea ng-online-compile="Ejemplo 1" binding="pivote">
+                            <input ou-text="" placeholder="Nombre" ng-model="pivote.nombre"/>
+                        </textarea>
+      </div>
+      <div class="tab-pane" id="tab-2">
+         
+         <p>El label o etiqueta del input esta definido por los <b>attributos: name, label, title o placeholder</b> o por el valor enviado en la directiva</p>
+         <textarea ng-online-compile="Ejemplo 2" binding="pivote">
+                            <input ou-text="" name="Nombre:" ng-model="pivote.nombre"/>
+                            <input ou-text="" label="Nombre:" ng-model="pivote.nombre"/>
+                            <input ou-text="" title="Nombre:" ng-model="pivote.nombre"/>
+                            <input ou-text="" placeholder="Nombre:" ng-model="pivote.nombre"/>
+                            <input ou-text="Nombre:" ng-model="pivote.nombre"/>
+                        </textarea>
+      </div>
+      <div class="tab-pane" id="tab-3">
+         
+         <p>Tambien se puede omitir el label o etiqueta pero manteniendo la apariencia o por el valor enviado en la directiva "false"</p>
+         <textarea ng-online-compile="Ejemplo 3" binding="pivote">
+                            <input ou-text="false" name="Nombre:" ng-model="pivote.nombre"/>
+                            <input ou-text="false" label="Nombre:" ng-model="pivote.nombre"/>
+                            <input ou-text="false" title="Nombre:" ng-model="pivote.nombre"/>
+                            <input ou-text="false" placeholder="Nombre:" ng-model="pivote.nombre"/>
+                            <input ou-text="Nombre:" ng-model="pivote.nombre"/>
+                        </textarea>
+      </div>
+   </div>
+</div>
